@@ -19,12 +19,13 @@
 
     <View
         android:id="@+id/crossHorizontal"
-        android:layout_width="498dp"
+        android:layout_width="398dp"
         android:layout_height="112dp"
         android:background="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@id/flagBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintWidth_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

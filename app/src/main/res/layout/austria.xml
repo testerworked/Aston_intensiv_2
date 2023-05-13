@@ -18,8 +18,8 @@
 
     <View
         android:id="@+id/stripeWhite"
-        android:layout_width="411dp"
-        android:layout_height="242dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:background="@color/white"
         app:layout_constraintHeight_percent="0.33"
         app:layout_constraintTop_toBottomOf="@+id/stripeRed"
@@ -27,9 +27,11 @@
 
     <View
         android:id="@+id/stripeRed2"
-        android:layout_width="411dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@color/redAu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintHeight_percent="0.34"
         app:layout_constraintTop_toBottomOf="@+id/stripeWhite"
         tools:ignore="MissingConstraints" />
