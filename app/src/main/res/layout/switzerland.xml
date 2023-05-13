@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <View
+        android:id="@+id/flagBackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FF0000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/crossHorizontal"
+        android:layout_width="498dp"
+        android:layout_height="112dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/flagBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/crossVertical"
+        android:layout_width="131dp"
+        android:layout_height="526dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@id/flagBackground"
+        app:layout_constraintEnd_toEndOf="@id/flagBackground"
+        app:layout_constraintStart_toStartOf="@id/flagBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.35" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
