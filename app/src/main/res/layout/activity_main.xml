@@ -7,78 +7,23 @@
     tools:context=".MainActivity">
 
 
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
+    <Button
+        android:id="@+id/buttonFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Task"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSecond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Second Task"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <include
-                android:id="@+id/check_austria"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="@dimen/cardview_default_radius"
-                layout="@layout/austria" />
-
-            <include
-                android:id="@+id/check_poland"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="@dimen/cardview_default_radius"
-                layout="@layout/poland" />
-
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="@dimen/cardview_default_radius"
-                layout="@layout/italy" />
-
-            <include
-                layout="@layout/colombia"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="@dimen/cardview_default_radius"
-                />
-
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="@dimen/cardview_default_radius"
-                layout="@layout/madagascar"
-                />
-
-            <include
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_margin="@dimen/cardview_default_radius"
-                layout="@layout/thailand"
-                />
-
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:layout_margin="@dimen/cardview_default_radius"
-                layout="@layout/denmark" />
-
-            <include
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/cardview_default_radius"
-                layout="@layout/switzerland" />
-
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
